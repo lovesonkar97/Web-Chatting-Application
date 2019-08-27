@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/public/chat_script.js"></script>
+    <style>
+        #ou_div {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    padding: 20px;
+    border: 3px solid #73AD21;
+}
+    </style>
+</head>
+<body>
+    <h1>chat</h1>
+    <form>
+        <input id="chat_input" type="text" name="c_input">
+        <input type="submit">
+    </form>
+    <ul id="chat_list"></ul>
+    <div id="ou_div">
+        <h2>online users</h2>
+        <ul id="ou_list"></ul>
+    </div>
+</body>
+</html>

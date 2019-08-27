@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <script src="login_signup.js"></script>
+</head>
+<body>
+    <h2>login</h2>
+    <form id="login_form" method="post" action="login">
+        email:<input id="login_email" name="l_email" type="email">
+        password:<input id="login_password" name="l_password" type="password">
+        <input type="submit">
+    </form>
+
+    <h2>signup</h2>
+    <form id="signup_form" method="post" action="signup">
+        name:<input id="signup_name" name="s_name" type="text">
+        email:<input id="signup_email" name="s_email" type="email">
+        age:<input id="signup_age" name="s_age" type="number">
+        password:<input id="signup_password" name="s_password" type="password">
+        <input type="submit">
+    </form>
+</body>
+</html>
